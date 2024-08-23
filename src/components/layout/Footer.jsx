@@ -7,7 +7,7 @@ const Footer = () => {
       <footer className='dark-footer'>
         <div className="container flex-footer">
           <div className="footer-box-1">
-            <h4>COMPING🌳🌲</h4>
+            <h4>CAMPING🌳🌲</h4>
           </div>
           <div className="footer-box-2">
             <NavLink to="/">Home</NavLink>
@@ -27,7 +27,7 @@ const Footer = () => {
          </form>
         </div>
         <div className="copyright">
-          <kbd>© Comping Copyright 2024 🌲🌳</kbd>
+          <kbd>© Camping Copyright 2024 🌲🌳</kbd>
         </div>
       </footer>
     </>

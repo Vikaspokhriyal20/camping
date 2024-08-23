@@ -1,0 +1,45 @@
+
+.error {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 600px;
+    margin-inline: auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.error img {
+    width: 400px;
+    object-fit: cover;
+}
+
+.error h3 {
+    letter-spacing: 1px;
+    color: crimson;
+}
+
+.error a {
+    letter-spacing: 1px;
+    color: crimson;
+}
+
+.error p {
+    font-weight: 500;
+}
+
+.link {
+    display: flex;
+    gap: 1rem;
+}
+
+.error button {
+    font-weight: 600;
+    color: rebeccapurple;
+    letter-spacing: 1px;
+    background-color: #fff;
+    border: none;
+    font-size: 1rem;
+}

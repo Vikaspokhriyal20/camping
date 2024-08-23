@@ -2,6 +2,13 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 const Header = () => {
+
+  const getActiveLink = ({ isActive }) => {
+    return {
+      color: isActive ? "red" : "black",
+    };
+  };
+
   return (
     <>
       <header className='header'>
@@ -12,10 +19,10 @@ const Header = () => {
             </NavLink>
           </div>
           <div className="nav-item-gap">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="about">About</NavLink>
-            <NavLink to="plan">Plan</NavLink>
-            <NavLink to="contact">Contact</NavLink>
+            <NavLink to="/" style={getActiveLink}>Home</NavLink>
+            <NavLink to="about" style={getActiveLink}>About</NavLink>
+            <NavLink to="plan" style={getActiveLink}>Plan</NavLink>
+            <NavLink to="contact"style={getActiveLink}>Contact</NavLink>
           </div>
         </div>
       </header>

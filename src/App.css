@@ -6,72 +6,70 @@
 }
 
 
-a 
-{
+a {
     text-decoration: none;
     font-weight: 600;
 }
 
-.active
-{
-    color: blue;
+p {
+    font-weight: 500;
+    letter-spacing: 1px;
+
 }
 
-main , section 
-{
+main,
+section {
     min-height: 80vh;
 
 }
 
-.header a
+li
 {
+    list-style: none;
+}
+
+.header a {
     color: #000;
 }
 
 
 
-.container
-{
-    max-width:1000px;
+.container {
+    max-width: 1000px;
     margin-inline: auto;
     padding: 1rem;
 }
 
-.flex
-{
+.flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-item-gap
-{
+.nav-item-gap {
     display: flex;
     gap: 1.4rem;
-    
+
 }
 
-.flex-footer
-{
+.flex-footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.footer-box-2 , .footer-box-3
-{
+.footer-box-2,
+.footer-box-3 {
     display: flex;
     gap: 0.4rem;
 }
 
-.footer-newsletter
-{
- display: flex;
+.footer-newsletter {
+    display: flex;
 }
 
-.footer-newsletter input
-{
-    border:none;
+.footer-newsletter input {
+    border: none;
     outline: none;
     background-color: #f5f5f5;
     padding: 0.4rem 0.8rem;
@@ -79,39 +77,34 @@ main , section
     color: black;
 }
 
-.newsletter::placeholder
-{
+.newsletter::placeholder {
     font-weight: 600;
     color: black;
 }
 
-.dark-footer
-{
+.dark-footer {
     background-color: rgb(39, 38, 38);
     color: #fff;
 }
 
-.dark-footer a
-{
+.dark-footer a {
     color: #fff;
 }
 
 
-.subscribe-btn
-{
+.subscribe-btn {
     border: none;
     outline: none;
     background-color: green;
     color: #fff;
-    padding: 0.4rem;
+    padding: 0.8rem 0.4rem;
     letter-spacing: 1px;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 600;
 }
 
-.copyright
-{
+.copyright {
     text-align: center;
     border-top: 0.1px solid grey;
     padding-top: 1rem;
@@ -121,8 +114,7 @@ main , section
 
 
 @media screen and (max-width:400px) {
-    .flex
-    {
+    .flex {
         flex-direction: column;
         gap: 1rem;
         justify-content: center;
@@ -130,11 +122,40 @@ main , section
 }
 
 @media screen and (max-width:850px) {
-    .flex-footer
-    {
+    .flex-footer {
         flex-direction: column;
         gap: 1rem;
         justify-content: center;
     }
 }
 
+
+.grid-4
+{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 1rem;
+    
+}
+
+
+@media screen and (max-width:950px) {
+    .grid-4
+    {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media screen and (max-width:750px) {
+    .grid-4
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width:400px) {
+    .grid-4
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+}

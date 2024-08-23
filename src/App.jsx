@@ -1,5 +1,5 @@
 import React from 'react';
-import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import './App.css';
 import About from "./pages/About";
 import Plan from "./pages/Plan";
@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Contact from './pages/Contact';
 import AppLayout from './components/layout/AppLayout';
 import ErrorPage from './pages/ErrorPage';
+import getMovieData from './api/GetAPIData';
 
 function App() {
 
@@ -29,7 +30,8 @@ function App() {
       
           {
             path: '/plan',
-            element: <Plan />
+            element: <Plan />,
+            loader:getMovieData,
           },
       
           {
