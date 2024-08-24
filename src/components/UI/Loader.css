@@ -1,0 +1,17 @@
+.loader
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+}
+
+#loading-text
+{
+    color: blueviolet;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.2rem;
+    filter: drop-shadow(1px 1px 1px lightblue);
+}

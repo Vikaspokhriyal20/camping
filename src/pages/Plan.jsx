@@ -8,10 +8,10 @@ const Plan = () => {
 
   return (
     <section>
-      <ul className='container grid-4'>
+      <ul className='container grid-col-4'>
         {movieData &&
           movieData.Search.map((curElement) => {
-          return <Card key={curElement.imdbID} curElement={curElement} />;
+            return <Card key={curElement.imdbID} curElement={curElement} />;
         })}
       </ul>
     </section>
