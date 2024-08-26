@@ -8,6 +8,8 @@ import Contact from './pages/Contact';
 import AppLayout from './components/layout/AppLayout';
 import ErrorPage from './pages/ErrorPage';
 import getMovieData from './api/GetAPIData';
+import PlanDetails from './components/UI/PlanDetails';
+import getMovieDetails from './api/GetMovieDetails';
 
 function App() {
 
@@ -32,7 +34,12 @@ function App() {
             path: '/plan',
             element: <Plan />,
             loader:getMovieData,
-          },
+        },
+        {
+          path: '/plan/:planID',
+          element: <PlanDetails />,
+          loader: getMovieDetails,
+        },
       
           {
             path: '/contact',

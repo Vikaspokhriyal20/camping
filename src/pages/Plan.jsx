@@ -4,7 +4,7 @@ import Card from '../components/UI/Card';
 
 const Plan = () => {
   const movieData = useLoaderData();
-  console.log(movieData);
+  // console.log(movieData);
 
   return (
     <section>

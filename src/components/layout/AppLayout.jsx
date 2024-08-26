@@ -6,7 +6,7 @@ import Loader from '../UI/Loader'
 
 const AppLayout = () => {
   const navigation = useNavigation();
-  console.log(navigation);
+  // console.log(navigation);
 
   if (navigation.state === 'loading') return <Loader/>
   

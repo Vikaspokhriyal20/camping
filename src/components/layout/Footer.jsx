@@ -16,10 +16,10 @@ const Footer = () => {
             <NavLink to="contact">Contact</NavLink>
          </div>
           <div className="footer-box-3">
-            <NavLink to="https://vercel.com/vikaspokhriyal20s-projects" target='_blank'>Link-1</NavLink>
-            <NavLink to="https://icodethis.com/VIKAS_POKHIRYAL" target='_blank'>Link-2</NavLink>
-            <NavLink to="https://github.com/Vikaspokhriyal20" target='_blank'>Link-3</NavLink>
-            <NavLink to="https://www.instagram.com/vikas_pokhriyal22/?hl=en" target='_blank'>Link-4</NavLink>
+            <NavLink to="https://vercel.com/vikaspokhriyal20s-projects" target='_blank'>1</NavLink>
+            <NavLink to="https://icodethis.com/VIKAS_POKHIRYAL" target='_blank'>2</NavLink>
+            <NavLink to="https://github.com/Vikaspokhriyal20" target='_blank'>3</NavLink>
+            <NavLink to="https://www.instagram.com/vikas_pokhriyal22/?hl=en" target='_blank'>4</NavLink>
          </div>
           <form className="footer-newsletter">
             <input type="Email" className='newsletter' placeholder='Enter your Email' />

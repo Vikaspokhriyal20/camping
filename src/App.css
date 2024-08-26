@@ -8,7 +8,7 @@
 
 a {
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 p {
@@ -61,9 +61,13 @@ li
 .footer-box-2,
 .footer-box-3 {
     display: flex;
-    gap: 0.4rem;
+    gap: 1rem;
 }
 
+footer a
+{
+    font-weight: 500;
+}
 .footer-newsletter {
     display: flex;
 }
@@ -134,14 +138,7 @@ li
 {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 2rem;
-}
-
-@media screen and (max-width:750px) {
-    .grid-col-4
-    {
-        gap: 1rem;
-    }
+    gap: 1rem;
 }
 
 @media screen and (max-width:650px) {
@@ -155,6 +152,5 @@ li
     .grid-col-4
     {
        grid-template-columns: repeat(2,1fr);
-       gap: 0.6rem;
     }
 }
