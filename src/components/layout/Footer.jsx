@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="footer-box-2">
             <NavLink to="/">Home</NavLink>
             <NavLink to="about">About</NavLink>
-            <NavLink to="plan">Plan</NavLink>
+            <NavLink to="plan">Moive</NavLink>
             <NavLink to="contact">Contact</NavLink>
          </div>
           <div className="footer-box-3">
@@ -23,7 +23,7 @@ const Footer = () => {
          </div>
           <form className="footer-newsletter">
             <input type="Email" className='newsletter' placeholder='Enter your Email' />
-            <button className='subscribe-btn'>Subscribe</button>
+            <button className='subscribe-btn'>Send</button>
          </form>
         </div>
         <div className="copyright">

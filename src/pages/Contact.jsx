@@ -27,9 +27,9 @@ export const Contact = () => {
   return (
     <section>
       <div className='container'>
-        <h2>Contact Page</h2>
+       <center><h2>Contact Us</h2></center>
 
-        <div className="contact-form">
+        <div className="contact-form contact">
           <Form method='POST' action='/contact' className='flex-form'>
             <div className='box'>
               <label htmlFor="username">Name</label>
@@ -45,7 +45,7 @@ export const Contact = () => {
               <textarea name="message" id="message" placeholder='Message' required></textarea>
             </div>
             <div><button type='submit' className='submit-btn' onClick={handleSubmit}>Submit</button></div>
-            <p>{message}</p>
+            <p id='msg'>{message}</p>
           </Form>
         </div>
       </div>

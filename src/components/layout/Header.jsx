@@ -9,6 +9,18 @@ const Header = () => {
     };
   };
 
+  const getActiveHome = ({ isActive }) => {
+    return {
+      color: isActive ? "blue" : "black",
+    };
+  };
+
+  const getActiveAbout = ({ isActive }) => {
+    return {
+      color: isActive ? "deeppink" : "black",
+    };
+  };
+
   return (
     <>
       <header className='header'>
@@ -19,9 +31,9 @@ const Header = () => {
             </NavLink>
           </div>
           <div className="nav-item-gap">
-            <NavLink to="/" style={getActiveLink}>Home</NavLink>
-            <NavLink to="about" style={getActiveLink}>About</NavLink>
-            <NavLink to="plan" style={getActiveLink}>Plan</NavLink>
+            <NavLink to="/" style={getActiveHome}>Home</NavLink>
+            <NavLink to="about" style={getActiveAbout}>About</NavLink>
+            <NavLink to="plan" style={getActiveLink}>Movie</NavLink>
             <NavLink to="contact"style={getActiveLink}>Contact</NavLink>
           </div>
         </div>
