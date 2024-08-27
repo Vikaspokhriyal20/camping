@@ -4,7 +4,7 @@ import './App.css';
 import About from "./pages/About";
 import Plan from "./pages/Plan";
 import Home from "./pages/Home";
-import Contact from './pages/Contact';
+import {Contact , contactData } from './pages/Contact';
 import AppLayout from './components/layout/AppLayout';
 import ErrorPage from './pages/ErrorPage';
 import getMovieData from './api/GetAPIData';
@@ -43,7 +43,8 @@ function App() {
       
           {
             path: '/contact',
-            element: <Contact />
+            element: <Contact />,
+            action: contactData,
           },
       
       ]
